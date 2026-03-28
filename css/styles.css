@@ -200,7 +200,13 @@ section {
 
 .characteristics-list-item {
     width: calc((100% - 72px) / 4);
+    flex-shrink: 0;
 }
+
+.characteristics-list .characteristics-list-item:first-child {
+    width: calc((100% - 72px) / 4);
+}
+
 .definition {
     font-weight: 400;
     font-size: 16px;
@@ -241,6 +247,12 @@ section {
 .team-list-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+    flex-shrink: 0;
+}
+
+.team-list .team-list-item:first-child {
+    width: calc((100% - 72px) / 4);
 }
 
 .card-content {
